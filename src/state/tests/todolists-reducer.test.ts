@@ -2,7 +2,7 @@ import {
     AddTodoListAC, ChangeTodoListFilterAC, ChangeTodoListTitleAC, RemoveTodolistAC, todoListsReducer
 } from '../reducer/todolists-reducer';
 import {v1} from 'uuid';
-import {FilterValuesType, TodoListType} from '../components/AppWithRedux';
+import {FilterValuesType, TodoListType} from '../../components/AppWithRedux';
 import {ResponseTodolistType} from "../requests/apiRequests";
 
 

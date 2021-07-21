@@ -3,13 +3,13 @@ import {TextField} from "@material-ui/core";
 
 type EdiTableTitlePropsType = {
     title: string
-    onChange: (newTitle: string | undefined) => void
+    onChange: (newTitle: string) => void
 }
 
 export function EdiTableTitle(props: EdiTableTitlePropsType) {
 
     let [editMode, setEditMode] = useState<boolean>()
-    let [title, setTitle] = useState<string>()
+    let [title, setTitle] = useState<string>('')
     let [error, setError] = useState<boolean>(false)
 
     const activeEditMode = () => {

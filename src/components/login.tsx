@@ -10,7 +10,7 @@ import {
     Paper
 } from '@material-ui/core'
 import {useFormik} from "formik";
-import {loginTC} from "../reducer/auth-reducer";
+import {loginTC} from "../state/reducer/auth-reducer";
 import {useDispatch} from "react-redux";
 import {Redirect} from "react-router-dom";
 

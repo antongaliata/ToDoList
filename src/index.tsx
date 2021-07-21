@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './state/style/index.css';
+import './style/index.css';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from 'react-router-dom';
 import {Provider} from "react-redux";
 import {store} from "./state/reducer/store";
-import {App} from "./state/components/App";
+import {App} from "./components/App";
 
 
 ReactDOM.render(
@@ -15,7 +15,4 @@ ReactDOM.render(
         </BrowserRouter>
     </Provider>, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();

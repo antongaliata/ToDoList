@@ -1,4 +1,4 @@
-import {TodoListType, FilterValuesType} from '../components/AppWithRedux';
+import {TodoListType, FilterValuesType} from '../../components/AppWithRedux';
 import {ResponseTodolistType, todoListsAPI} from "../requests/apiRequests";
 import {Dispatch} from "redux";
 import {setAppStatusAC, StatusApiRequestType} from "./app-reducer";

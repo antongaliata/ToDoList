@@ -10,10 +10,10 @@ import {Redirect, Route, Switch} from "react-router-dom";
 import {Login} from "./login";
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {AppRootStateType} from "../reducer/store";
-import {fetchTodoListsTC, StatusApiRequestType} from "../reducer/app-reducer";
+import {AppRootStateType} from "../state/reducer/store";
+import {fetchTodoListsTC, StatusApiRequestType} from "../state/reducer/app-reducer";
 import AppWithRedux from "./AppWithRedux";
-import {logoutTC} from "../reducer/auth-reducer";
+import {logoutTC} from "../state/reducer/auth-reducer";
 
 export const App = () => {
     const appStatus = useSelector<AppRootStateType, StatusApiRequestType>(state => state.app.status)

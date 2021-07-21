@@ -1,5 +1,5 @@
 import axios from "axios";
-import {TaskType} from "../components/Todolist";
+import {TaskType} from "../../components/Todolist";
 
 const settings = {
     withCredentials: true,

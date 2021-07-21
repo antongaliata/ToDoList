@@ -1,4 +1,4 @@
-import {TasksStateType} from '../components/AppWithRedux';
+import {TasksStateType} from '../../components/AppWithRedux';
 import {
     AddTodoListActionType,
     RemoveTodoListActionType, setTodoListEntityStatusAC,
@@ -7,7 +7,7 @@ import {
 } from './todolists-reducer'
 import {Dispatch} from "redux";
 import {taskAPI} from "../requests/apiRequests";
-import {TaskType} from "../components/Todolist";
+import {TaskType} from "../../components/Todolist";
 import {handlerServerError, handlerServerNetworkError} from "../utils/error-utils";
 
 

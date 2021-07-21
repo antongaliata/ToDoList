@@ -1,5 +1,5 @@
 import {addTaskAC, removeTaskAC, tasksReducer, taskStatusAC, taskTitleAC} from '../reducer/tasks-reducer';
-import {TasksStateType} from '../components/AppWithRedux';
+import {TasksStateType} from '../../components/AppWithRedux';
 import {AddTodoListAC, RemoveTodolistAC, setTodoListsAC} from "../reducer/todolists-reducer";
 import {ResponseTodolistType} from "../requests/apiRequests";
 import {expect} from "@jest/globals";

@@ -4,14 +4,14 @@ import {AddItemForm} from "./AddItemForm";
 import {Grid} from "@material-ui/core";
 import {
     ChangeTodoListFilterAC, fetchCreateTodoList, fetchDeleteTodolist, fetchTodoListsTC, fetchUpdateTodolist
-} from "../reducer/todolists-reducer";
+} from "../state/reducer/todolists-reducer";
 import {
     fetchCreateTask, fetchDeleteTask, fetchUpdateTask,
     taskStatusAC
-} from "../reducer/tasks-reducer";
+} from "../state/reducer/tasks-reducer";
 import {useDispatch, useSelector} from "react-redux";
-import {AppRootStateType} from "../reducer/store";
-import {StatusApiRequestType} from "../reducer/app-reducer";
+import {AppRootStateType} from "../state/reducer/store";
+import {StatusApiRequestType} from "../state/reducer/app-reducer";
 import {Redirect} from "react-router-dom";
 
 

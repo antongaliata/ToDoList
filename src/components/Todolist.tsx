@@ -6,9 +6,9 @@ import {AddItemForm} from "./AddItemForm";
 import {EdiTableTitle} from "./EdiTableTitle";
 import {Button, ButtonGroup, Checkbox, CircularProgress, IconButton, Paper} from "@material-ui/core";
 import {Delete} from "@material-ui/icons";
-import {fetchTaskTC} from "../reducer/tasks-reducer";
+import {fetchTaskTC} from "../state/reducer/tasks-reducer";
 import {useDispatch} from "react-redux";
-import {StatusApiRequestType} from "../reducer/app-reducer";
+import {StatusApiRequestType} from "../state/reducer/app-reducer";
 
 export type TaskType = {
     id: string
@@ -42,7 +42,7 @@ export const Todolist = React.memo(function (props: PropsType) {
     const onAllClickHandler = () => props.changeFilter("all", props.id);
     const onActiveClickHandler = () => props.changeFilter("active", props.id);
     const onCompletedClickHandler = () => props.changeFilter("completed", props.id);
-    const onChangeTitle = (newTitle: string) => props.changeHandlerTitle(newTitle, props.id);
+    const onChangeTitle = (newTitle: string ) => props.changeHandlerTitle(newTitle, props.id);
 
     let tasksForTodolist = props.tasks;
 
