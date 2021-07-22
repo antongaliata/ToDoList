@@ -64,8 +64,8 @@ export const Login = (props: LoginType) => {
                             <h2 style={{textAlign: 'center'}}>Login</h2>
                             <FormLabel>
                                 <p>Test login</p>
-                                <p>Email: antongaliata@gmail.com</p>
-                                <p>Password: 1033393qwe</p>
+                                <p>Email: mailfortest118@gmail.com</p>
+                                <p>Password: passwordtest</p>
                             </FormLabel>
                             <FormGroup>
                                 <TextField

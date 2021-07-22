@@ -1,6 +1,7 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from "react";
 import {IconButton, TextField} from "@material-ui/core";
 import {AddBox} from "@material-ui/icons";
+import '../style/intemForm.css'
 
 type AddItemFormType = {
     addItem: (title: string) => void
@@ -34,7 +35,7 @@ export const AddItemForm = React.memo(function (props: AddItemFormType) {
         }
     }
 
-    return <div>
+    return <div className={'container_input'}>
         <TextField
             size="small"
             variant="outlined"

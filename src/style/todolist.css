@@ -34,6 +34,10 @@
     height: 400px;
 }
 
+.wrapperTasks input{
+    max-width: 150px;
+}
+
 .wrapper-button-group {
     display: flex;
     justify-content: center;
@@ -53,7 +57,7 @@
     background: white;
     outline: none;
     border-radius: 50%;
-    padding-right: 5.1px;
+    padding-right: 6px;
     padding-bottom: 3.2px;
 }
 
