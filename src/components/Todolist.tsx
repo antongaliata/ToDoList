@@ -68,7 +68,7 @@ export const Todolist = React.memo(function (props: PropsType) {
         <div className={'header_todolist'}>
             <EdiTableTitle title={props.title} onChange={onChangeTitle}/>
             <button className={'buttonDelete'} onClick={buttonDelete}
-                    disabled={props.entityStatus === 'loading'}>&#10006;</button>
+                    disabled={props.entityStatus === 'loading'}><span>&#10006;</span></button>
             <AddItemForm addItem={addTask} entityStatus={props.entityStatus === 'loading'}/>
         </div>
             <ul className={'wrapperTasks'}>
